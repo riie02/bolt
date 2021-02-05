@@ -43,7 +43,7 @@ header {
 
 .header-bolt-icon {
   font-size: 40px;
-  color: #74cfae;
+  color: #4e4e4e;
 }
 
 .header-btn {
@@ -62,7 +62,7 @@ main {
 
 .thema-inner {
   text-align: center;
-  padding: 250px;
+  padding: 250px 0;
 }
 
 .thema-title {
@@ -189,7 +189,7 @@ img {
 
 .circle {
   display: flex;
-  margin: 70px auto 0;
+  margin-top: 70px;
 }
 
 .circle-box {
@@ -222,9 +222,7 @@ img {
 
 .nav-list li {
   display: inline-block;
-  margin: 0 auto;
   width: 185px;
-  height: 90px;
   text-align: center;
   padding: 20px;
   box-sizing: border-box;
