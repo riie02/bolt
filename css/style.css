@@ -97,7 +97,7 @@ img {
 }
 
 .what-title-text {
-  width: 50%;
+  width: 650px;
   text-align: center;
   color: #fff;
 }
@@ -109,6 +109,8 @@ img {
 .what-text {
   font-size: 20px;
   margin-top: 35px;
+  width: 650px;
+  line-height: 30px;
 }
 
 /* work */
