@@ -51,7 +51,7 @@ header {
   padding: 14px 12px;
 }
 
-.sp-ham {
+.hamburger-menu {
   display: none;
 }
 
@@ -160,7 +160,6 @@ main {
 
 .work-list li img:hover {
   opacity: 1;
-  cursor: pointer;
 }
 
 .work-list li a {
@@ -322,7 +321,6 @@ main {
 
   .work-subtitle-text {
     width: 100%;
-    padding-left: 0;
   }
 
   .work-subtitle a {
@@ -359,7 +357,7 @@ main {
   }
 
   .nav-icon {
-    font-size: 35px;
+    font-size: 40px;
   }
 }
 
@@ -370,6 +368,10 @@ main {
     width: 100%;
   }
 
+  .header-bolt-icon {
+    margin-left: 15px;
+  }
+
   .header {
     width: 320px;
   }
@@ -377,42 +379,37 @@ main {
     display: none;
   }
 
-  .sp-ham {
-    width: 20px;
-    height: 15px;
+  .hamburger-menu {
+    display: block;
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    z-index: 13;
     border: 1px solid #ddd;
     border-radius: 4px;
-    padding: 10px;
-    align-items: center;
-  }
+    }
 
-  .sp-ham-sp {
-    position: relative;
-    padding: 10px;
-  }
-
-  .sp-ham span {
-    position: absolute;
+  .hamburger-menu span {
     display: block;
-    height: 1px;
-    border: 1px solid #ddd;
-    background-color: #ddd;
-    width: 15px;
+    position: absolute;
+    width: 31px;
+    border-bottom: solid 3px #ddd;
+    left: 7px;
   }
 
-  .sp-ham span:nth-child(1) {
-    top: 0;
-    left: 0;
+  .hamburger-menu span:nth-child(1) {
+    top: 10px;
   }
 
-  .sp-ham span:nth-child(2) {
-    top: 8px;
-    left: 0;
+  .hamburger-menu span:nth-child(2) {
+    top: 20px;
   }
 
-  .sp-ham span:nth-child(3) {
-    top: 16px;
-    left: 0;
+  .hamburger-menu span:nth-child(3) {
+    top: 30px;
   }
 
   .thema-inner {
@@ -468,14 +465,13 @@ main {
     text-align: center;
   }
 
-  .work-subtitle a {
-    margin-left: 0px;
-    margin-top: 40px;
-   }
-
   .work-subtitle-text {
     width: 100%;
-    padding-left: 0;
+  }
+
+  .work-subtitle a {
+   margin-left: 0px;
+   margin-top: 40px;
   }
 
   .circle-list {
@@ -493,7 +489,7 @@ main {
   }
 
   .sns_inner {
-    padding: 50px 15px;
+    padding: 50px 0;
     box-sizing: border-box;
   }
   .nav-list {
@@ -503,5 +499,9 @@ main {
   .nav-list li {
     display: block;
     width: 100%;
+  }
+
+  .footer_inner_text {
+    padding-right: 10px;
   }
 }
