@@ -276,10 +276,6 @@ main {
     width: 97%;
   }
 
-  .header {
-    width: 769px;
-  }
-
   .what-inner {
     display: block;
     padding-bottom: 25px;
@@ -330,7 +326,8 @@ main {
     padding-left: 0;
   }
 
-  .work-btn {
+  .work-subtitle a {
+   margin-left: 0px;
    margin-top: 40px;
   }
 
@@ -339,8 +336,8 @@ main {
   }
 
   .circle-list li {
-    margin-right: 0;
     margin-top: 88px;
+    margin-left: 0;
   }
 
   .circle-list li:first-child {
@@ -374,8 +371,6 @@ main {
     width: 100%;
   }
 
-
-  
   .header {
     width: 320px;
   }
@@ -474,13 +469,14 @@ main {
     text-align: center;
   }
 
+  .work-subtitle a {
+    margin-left: 0px;
+    margin-top: 40px;
+   }
+
   .work-subtitle-text {
     width: 100%;
     padding-left: 0;
-  }
-
-  .work-btn {
-   margin-top: 40px;
   }
 
   .circle-list {
@@ -488,8 +484,8 @@ main {
   }
 
   .circle-list li {
-    margin-right: 0;
     margin-top: 88px;
+    margin-left: 0;
   }
 
   .circle-list li:first-child {
