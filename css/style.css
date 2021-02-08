@@ -33,6 +33,7 @@ header {
   width: 100%;
   top: 0;
   left: 0;
+  z-index: 1;
 }
 
 .header-inner {
@@ -87,13 +88,13 @@ main {
   display: flex;
 }
 
-img {
-  vertical-align: bottom;
-}
-
 .what-img {
   text-align: center;
   width: 400px;
+}
+
+.what-img .ip-img {
+  vertical-align: bottom;
 }
 
 .what-title-text {
@@ -147,16 +148,17 @@ img {
   margin-left: 0;
 }
 
-.work-list li a {
+.work-list li img {
   opacity: .7;
   transition: .3s;
 }
 
-.work-list li a:hover {
+.work-list li img:hover {
   opacity: 1;
 }
 
 .work-btn {
+  line-height: 10px;
   height: 10px;
   padding: 14px 20px;
 }
@@ -179,7 +181,8 @@ img {
 }
 
 .skills-inner {
-  padding: 70px;
+  padding: 70px 0 100px;
+  box-sizing: border-box;
 }
 
 .skills_title {
@@ -187,17 +190,18 @@ img {
   color: #fff;
 }
 
-.circle {
+.circle-list {
+  font-size: 0;
   display: flex;
   margin-top: 70px;
 }
 
-.circle-box {
+.circle-list li {
   text-align: center;
-  margin-left: 180px;
+  margin-right: 180px;
 }
 
-.circle-box:first-child {
+.circle-list li:first-child {
   margin-left: 30px;
 }
 
@@ -230,7 +234,7 @@ img {
   transition: .3s;
 }
 
-.nav-icon a{
+.nav-list a{
   color: #74cfae;
 }
 
@@ -256,4 +260,246 @@ img {
   padding-bottom: 25px;
   color: #fff;
 }
+/* タブレット用レイアウト */
+/*
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .inner {
+    width: 97%;
+  }
 
+  .header {
+    width: 769px;
+  }
+
+  .what-inner {
+    display: block;
+    padding-bottom: 25px;
+  }
+
+  .what-img {
+    width: 100%;
+  }
+
+  .what-title-text {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .what-text {
+    width: 85%;
+    margin: 35px auto 0;
+  }
+
+  .work-inner {
+    padding-bottom: 70px;
+  }
+
+  .work-list li{
+    display: block;
+    margin-top: 0;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .work-list li:nth-child(3n+1) {
+    margin-top: 80px;
+  }
+
+  .work-list li:first-child {
+    margin-top: 0;
+  }
+
+  .work-subtitle {
+    display: block;
+    padding: 0;
+    margin-top: 80px;
+    text-align: center;
+  }
+
+  .work-subtitle-text {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .work-btn {
+   margin-top: 40px;
+  }
+
+  .circle-list {
+    display: block;
+  }
+
+  .circle-list li {
+    margin-right: 0;
+    margin-top: 88px;
+  }
+
+  .circle-list li:first-child {
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .sns_inner {
+    width: 100%;
+  }
+
+  .nav-list {
+    padding-left: 0;
+    text-align: center;
+    line-height: 0px;
+  }
+
+  .nav-list li {
+    width: 130px;
+  }
+
+  .nav-icon {
+    font-size: 35px;
+  }
+}
+*/
+ /* スマートフォン用レイアウト */
+/*
+@media screen and (max-width: 767px) {
+  .inner {
+    width: 100%;
+  }
+
+  .header {
+    width: 320px;
+  }
+  .header-btn {
+    display: none;
+
+  }
+
+  .thema-inner {
+    padding: 160px 0 130px;
+  }
+
+  .thema-title {
+    font-size: 80px;
+  }
+
+  .what-inner {
+    display: block;
+    padding-bottom: 25px;
+  }
+
+  .what-img {
+    width: 100%;
+  }
+
+  .what-title-text {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .what-text {
+    width: 85%;
+    margin: 35px auto 0;
+  }
+
+  .work-inner {
+    padding-bottom: 70px;
+  }
+
+  .work-list li{
+    display: block;
+    margin-top: 0;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .work-list li:nth-child(3n+1) {
+    margin-top: 80px;
+  }
+
+  .work-list li:first-child {
+    margin-top: 0;
+  }
+
+  .work-subtitle {
+    display: block;
+    padding: 0;
+    margin-top: 80px;
+    text-align: center;
+  }
+
+  .work-subtitle-text {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .work-btn {
+   margin-top: 40px;
+  }
+
+  .circle-list {
+    display: block;
+  }
+
+  .circle-list li {
+    margin-right: 0;
+    margin-top: 88px;
+  }
+
+  .circle-list li:first-child {
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .sns_inner {
+    padding: 50px 15px;
+    box-sizing: border-box;
+  }
+  .nav-list {
+    padding-left: 0in;
+  }
+
+  .nav-list li {
+    display: block;
+    width: 100%;
+  }
+
+  .sp-ham {
+    width: 20px;
+    height: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    align-items: center;
+  }
+
+  .sp-ham-sp {
+    position: relative;
+    padding: 10px;
+  }
+
+  .sp-ham span {
+    position: absolute;
+    display: block;
+    height: 1px;
+    border: 1px solid #ddd;
+    background-color: #ddd;
+    width: 15px;
+  }
+
+  .sp-ham span:nth-child(1) {
+    top: 0;
+    left: 0;
+  }
+
+  .sp-ham span:nth-child(2) {
+    top: 8px;
+    left: 0;
+  }
+
+  .sp-ham span:nth-child(3) {
+    top: 16px;
+    left: 0;
+  }
+
+}
+
+*/
