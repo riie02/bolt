@@ -365,29 +365,18 @@ main {
 
 @media screen and (max-width: 767px) {
   .inner {
-    width: 100%;
+    width: 97%;
   }
 
-  .header-bolt-icon {
-    margin-left: 15px;
-  }
-
-  .header {
-    width: 320px;
-  }
   .header-btn {
     display: none;
   }
 
   .hamburger-menu {
     display: block;
-    position: fixed;
-    right: 15px;
-    top: 15px;
+    position: relative;
     width: 45px;
     height: 45px;
-    cursor: pointer;
-    z-index: 13;
     border: 1px solid #ddd;
     border-radius: 4px;
     }
@@ -499,9 +488,5 @@ main {
   .nav-list li {
     display: block;
     width: 100%;
-  }
-
-  .footer_inner_text {
-    padding-right: 10px;
   }
 }
