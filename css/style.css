@@ -163,7 +163,7 @@ main {
 }
 
 .work-list li a {
-  display: block;
+  display: inline-block;
 }
 
 .work-subtitle a {
@@ -234,6 +234,7 @@ main {
 
 .nav-list {
   text-align: center;
+  font-size: 0;
 }
 
 .nav-list li {
@@ -269,7 +270,7 @@ main {
 }
 /* タブレット用レイアウト */
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .inner {
     width: 97%;
   }
@@ -289,7 +290,7 @@ main {
   }
 
   .what-text {
-    width: 85%;
+    width: 100%;
     margin: 35px auto 0;
   }
 
@@ -341,33 +342,11 @@ main {
     margin-left: 0;
     margin-top: 0;
   }
-
-  .sns_inner {
-    width: 100%;
-  }
-
-  .nav-list {
-    padding-left: 0;
-    text-align: center;
-    line-height: 0px;
-  }
-
-  .nav-list li {
-    width: 130px;
-  }
-
-  .nav-icon {
-    font-size: 40px;
-  }
 }
 
  /* スマートフォン用レイアウト */
 
 @media screen and (max-width: 767px) {
-  .inner {
-    width: 97%;
-  }
-
   .header-btn {
     display: none;
   }
@@ -409,80 +388,12 @@ main {
     font-size: 80px;
   }
 
-  .what-inner {
-    display: block;
-    padding-bottom: 25px;
-  }
-
-  .what-img {
-    width: 100%;
-  }
-
-  .what-title-text {
-    width: 100%;
-    margin-top: 20px;
-  }
-
-  .what-text {
-    width: 85%;
-    margin: 35px auto 0;
-  }
-
-  .work-inner {
-    padding-bottom: 70px;
-  }
-
-  .work-list li{
-    display: block;
-    margin-top: 0;
-    margin-left: 0;
-    text-align: center;
-  }
-
-  .work-list li:nth-child(3n+1) {
-    margin-top: 80px;
-  }
-
-  .work-list li:first-child {
-    margin-top: 0;
-  }
-
-  .work-subtitle {
-    display: block;
-    padding: 0;
-    margin-top: 80px;
-    text-align: center;
-  }
-
-  .work-subtitle-text {
-    width: 100%;
-  }
-
-  .work-subtitle a {
-   margin-left: 0px;
-   margin-top: 40px;
-  }
-
-  .circle-list {
-    display: block;
-  }
-
-  .circle-list li {
-    margin-top: 88px;
-    margin-left: 0;
-  }
-
-  .circle-list li:first-child {
-    margin-left: 0;
-    margin-top: 0;
-  }
-
   .sns_inner {
     padding: 50px 0;
     box-sizing: border-box;
   }
   .nav-list {
-    padding-left: 0in;
+    padding-left: 0;
   }
 
   .nav-list li {
