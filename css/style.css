@@ -234,7 +234,7 @@ main {
 }
 
 .nav-list {
-  padding-left: 180px;
+  text-align: center;
 }
 
 .nav-list li {
@@ -253,7 +253,6 @@ main {
 
 .nav-list li:hover {
   background-color: #fff;
-  cursor: pointer;
 }
 
 /* footer */
