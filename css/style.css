@@ -242,7 +242,7 @@ main {
   text-align: right;
   color: #fff;
 }
-/* タブレット用レイアウト */
+/* タブレット用以下レイアウト */
 @media screen and (max-width: 1199px) {
   .inner {
     width: 97%;
@@ -331,11 +331,14 @@ main {
   .hamburger-menu span {
     display: block;
     width: 27px;
-    border-bottom: solid 3px #ddd;
+    background-color: #ddd;
     height: 3px;
-    top: 10px;
+    margin-top: 5px;
   }
 
+  .hamburger-menu span:first-child {
+    margin-top: 0;
+  }
   .thema-inner {
     padding: 160px 0 130px;
   }
